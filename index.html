@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CareerNest helps you discover job opportunities and connect with companies.">
+  <title>CareerNest | Find your next opportunity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="CareerNest home"><span class="brand-mark">C</span> CareerNest</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav id="mainNav" class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#jobs">Jobs</a>
+        <a href="#categories">Categories</a>
+        <a href="#companies">Companies</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-apply" href="#apply">Apply now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">YOUR CAREER STARTS HERE</span>
+          <h1>Find work that<br><span>moves you forward.</span></h1>
+          <p>Explore opportunities, discover growing companies and take the next step in your career.</p>
+          <form class="search-panel" id="searchForm">
+            <label class="sr-only" for="jobSearch">Search jobs</label>
+            <span class="search-icon">⌕</span>
+            <input id="jobSearch" type="search" placeholder="Job title, keyword or company">
+            <button type="submit">Search jobs</button>
+          </form>
+          <p class="popular">Popular: <a href="#jobs" data-search="Developer">Developer</a> · <a href="#jobs" data-search="Designer">Designer</a> · <a href="#jobs" data-search="Analyst">Analyst</a></p>
+        </div>
+        <div class="hero-art">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-card">
+            <div class="art-top"><span class="art-dot"></span><span class="art-dot"></span><span class="art-dot"></span></div>
+            <div class="art-avatar">✦</div>
+            <div class="art-line long"></div><div class="art-line"></div>
+            <div class="art-stats"><div><strong>2.4k+</strong><small>Opportunities</small></div><div><strong>180+</strong><small>Companies</small></div></div>
+          </div>
+          <div class="floating-tag tag-top">✦ Your next chapter</div>
+          <div class="floating-tag tag-bottom">✓ New roles every week</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-inner"><span>Explore opportunities across</span><strong>TECHNOLOGY</strong><strong>FINANCE</strong><strong>HEALTHCARE</strong><strong>EDUCATION</strong></div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">FIND YOUR FIELD</span><h2>Explore job categories</h2></div><p>Start with an area that matches your interests and skills.</p></div>
+        <div class="category-grid">
+          <button class="category-card" data-category="IT"><span class="category-icon purple">⌘</span><strong>Information Technology</strong><small>Software, data and support</small></button>
+          <button class="category-card" data-category="Marketing"><span class="category-icon orange">◈</span><strong>Marketing</strong><small>Brand, content and growth</small></button>
+          <button class="category-card" data-category="Finance"><span class="category-icon green">₹</span><strong>Finance</strong><small>Accounts and analysis</small></button>
+          <button class="category-card" data-category="Healthcare"><span class="category-icon pink">✚</span><strong>Healthcare</strong><small>Care and administration</small></button>
+          <button class="category-card" data-category="Education"><span class="category-icon blue">▤</span><strong>Education</strong><small>Teaching and learning</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section jobs-section" id="jobs">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">HAND-PICKED FOR YOU</span><h2>Featured opportunities</h2></div><p>Sample listings for this student project demonstration.</p></div>
+        <div class="job-toolbar">
+          <div class="filter-tabs" id="filterTabs">
+            <button class="filter active" data-filter="All">All jobs</button>
+            <button class="filter" data-filter="IT">IT</button>
+            <button class="filter" data-filter="Marketing">Marketing</button>
+            <button class="filter" data-filter="Finance">Finance</button>
+            <button class="filter" data-filter="Healthcare">Healthcare</button>
+            <button class="filter" data-filter="Education">Education</button>
+          </div>
+          <span id="jobCount" class="job-count">6 opportunities</span>
+        </div>
+        <div class="job-grid" id="jobGrid">
+          <article class="job-card" data-category="IT" data-search="Frontend Developer BrightPixel Chennai">
+            <div class="job-card-top"><span class="company-logo logo-purple">B</span><span class="job-type">Full-time</span></div>
+            <h3>Frontend Developer</h3><p class="company">BrightPixel Technologies</p>
+            <div class="job-meta"><span>⌖ Chennai</span><span>₹4–6 LPA</span></div>
+            <p class="job-description">Build accessible, responsive interfaces with a collaborative product team.</p>
+            <div class="job-bottom"><span class="tag">IT</span><a href="#apply" class="apply-link" data-position="Frontend Developer">View & apply ↗️</a></div>
+          </article>
+          <article class="job-card" data-category="Marketing" data-search="Content Marketing Associate Northstar Chennai">
+            <div class="job-card-top"><span class="company-logo logo-orange">N</span><span class="job-type">Full-time</span></div>
+            <h3>Content Marketing Associate</h3><p class="company">Northstar Media</p>
+            <div class="job-meta"><span>⌖ Chennai</span><span>₹3–4.5 LPA</span></div>
+            <p class="job-description">Create useful content and support digital campaigns across channels.</p>
+            <div class="job-bottom"><span class="tag">Marketing</span><a href="#apply" class="apply-link" data-position="Content Marketing Associate">View & apply ↗️</a></div>
+          </article>
+          <article class="job-card" data-category="Finance" data-search="Junior Financial Analyst FinEdge Coimbatore">
+            <div class="job-card-top"><span class="company-logo logo-green">F</span><span class="job-type">Full-time</span></div>
+            <h3>Junior Financial Analyst</h3><p class="company">FinEdge Solutions</p>
+            <div class="job-meta"><span>⌖ Coimbatore</span><span>₹3.5–5 LPA</span></div>
+            <p class="job-description">Assist with reports, budgeting and interpreting financial data.</p>
+            <div class="job-bottom"><span class="tag">Finance</span><a href="#apply" class="apply-link" data-position="Junior Financial Analyst">View & apply ↗️</a></div>
+          </article>
+          <article class="job-card" data-category="Healthcare" data-search="Healthcare Operations Assistant WellSpring Madurai">
+            <div class="job-card-top"><span class="company-logo logo-pink">W</span><span class="job-type">Full-time</span></div>
+            <h3>Healthcare Operations Assistant</h3><p class="company">WellSpring Care</p>
+            <div class="job-meta"><span>⌖ Madurai</span><span>₹2.8–3.8 LPA</span></div>
+            <p class="job-description">Coordinate daily service operations and support patient administration.</p>
+            <div class="job-bottom"><span class="tag">Healthcare</span><a href="#apply" class="apply-link" data-position="Healthcare Operations Assistant">View & apply ↗️</a></div>
+          </article>
+          <article class="job-card" data-category="Education" data-search="Learning Support Associate LearnLoop Trichy">
+            <div class="job-card-top"><span class="company-logo logo-blue">L</span><span class="job-type">Part-time</span></div>
+            <h3>Learning Support Associate</h3><p class="company">LearnLoop Academy</p>
+            <div class="job-meta"><span>⌖ Tiruchirappalli</span><span>₹18–22k/month</span></div>
+            <p class="job-description">Help learners navigate digital lessons and learning resources.</p>
+            <div class="job-bottom"><span class="tag">Education</span><a href="#apply" class="apply-link" data-position="Learning Support Associate">View & apply ↗️</a></div>
+          </article>
+          <article class="job-card" data-category="IT" data-search="Data Analyst Intern Orbit Labs Bengaluru">
+            <div class="job-card-top"><span class="company-logo logo-purple">O</span><span class="job-type">Internship</span></div>
+            <h3>Data Analyst Intern</h3><p class="company">Orbit Labs</p>
+            <div class="job-meta"><span>⌖ Bengaluru</span><span>₹20–25k/month</span></div>
+            <p class="job-description">Work with spreadsheets and dashboards to find useful patterns.</p>
+            <div class="job-bottom"><span class="tag">IT</span><a href="#apply" class="apply-link" data-position="Data Analyst Intern">View & apply ↗️</a></div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>No matching jobs found. Try another keyword or category.</p>
+        <p class="demo-note">Note: All job listings, companies and salary figures on this demo website are fictional sample data.</p>
+      </div>
+    </section>
+
+    <section class="section companies-section" id="companies">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">MEET THE TEAMS</span><h2>Companies to discover</h2></div><p>Get a quick look at organisations with sample openings.</p></div>
+        <div class="company-grid">
+          <article class="company-card"><span class="company-logo logo-purple">B</span><div><h3>BrightPixel Technologies</h3><p>Digital products and software development.</p><small>Technology · Chennai</small></div></article>
+          <article class="company-card"><span class="company-logo logo-orange">N</span><div><h3>Northstar Media</h3><p>Creative campaigns and digital storytelling.</p><small>Marketing · Chennai</small></div></article>
+          <article class="company-card"><span class="company-logo logo-green">F</span><div><h3>FinEdge Solutions</h3><p>Financial services and business analytics.</p><small>Finance · Coimbatore</small></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section application-section" id="apply">
+      <div class="container application-grid">
+        <div class="application-copy"><span class="eyebrow">TAKE THE NEXT STEP</span><h2>Ready to make your move?</h2><p>Complete the application form to demonstrate how a candidate can submit their details for a selected role.</p><div class="application-points"><span>✓ Simple application form</span><span>✓ Clear candidate information</span><span>✓ Instant demo confirmation</span></div></div>
+        <form class="application-form" id="applicationForm">
+          <h3>Job application</h3><p class="form-intro">Fields marked * are required.</p>
+          <div class="form-row"><div class="form-field"><label for="fullName">Full name *</label><input id="fullName" name="fullName" required placeholder="Your name"></div><div class="form-field"><label for="email">Email address *</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div></div>
+          <div class="form-row"><div class="form-field"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" pattern="[0-9+\-\s]{10,15}" required placeholder="Your phone number"></div><div class="form-field"><label for="qualification">Qualification *</label><select id="qualification" name="qualification" required><option value="">Select qualification</option><option>Higher Secondary</option><option>Diploma</option><option>Undergraduate</option><option>Postgraduate</option><option>Other</option></select></div></div>
+          <div class="form-row"><div class="form-field"><label for="experience">Experience</label><select id="experience" name="experience"><option>Fresher</option><option>Less than 1 year</option><option>1–3 years</option><option>3–5 years</option><option>5+ years</option></select></div><div class="form-field"><label for="position">Position applied for *</label><select id="position" name="position" required><option value="">Select a position</option><option>Frontend Developer</option><option>Content Marketing Associate</option><option>Junior Financial Analyst</option><option>Healthcare Operations Assistant</option><option>Learning Support Associate</option><option>Data Analyst Intern</option></select></div></div>
+          <div class="form-field"><label for="message">Why are you interested? (optional)</label><textarea id="message" name="message" rows="3" placeholder="Briefly introduce yourself..."></textarea></div>
+          <button class="submit-button" type="submit">Submit application <span>→</span></button>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          <small class="privacy-note">Demo only: your form is not sent to a real company or stored on a server.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-inner"><div><span class="eyebrow">ABOUT CAREERNEST</span><h2>A simpler way to explore what's next.</h2></div><p>CareerNest is a student micro project that demonstrates how a job portal can bring job listings, career categories, company information and an application form together in one responsive website. It is a front-end demonstration built with HTML, CSS and JavaScript.</p></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#home"><span class="brand-mark">C</span> CareerNest</a><p>Discover opportunities. Build your future.</p></div>
+      <div><h4>Explore</h4><a href="#jobs">Available jobs</a><a href="#categories">Categories</a><a href="#companies">Companies</a></div>
+      <div><h4>Contact</h4><a href="mailto:hello@careernest.example">hello@careernest.example</a><span>Coimbatore, Tamil Nadu, India</span></div>
+      <div><h4>Follow</h4><div class="social-links"><a href="#contact" aria-label="LinkedIn">in</a><a href="#contact" aria-label="Instagram">◎</a><a href="#contact" aria-label="Facebook">f</a></div></div>
+    </div>
+    <div class="container copyright">©️ 2026 CareerNest. Student micro project demonstration.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
